@@ -1,0 +1,22 @@
+
+const Title = ({customStyle, children}) => {
+  return (
+      <h2 className={`relative w-fit text-2xl md:text-4xl font-black uppercase ${customStyle}`}>
+        {children}
+        <svg
+          className='absolute right-0 -bottom-2 -z-1 h-6 w-25 scale-125'
+          width='186'
+          height='35'
+          viewBox='0 0 186 35'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path
+            d='M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z'
+            fill='#EBD96B'
+          />
+        </svg>
+      </h2>
+  );
+}
+
+export default Title;
